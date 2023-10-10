@@ -2,14 +2,9 @@ body {
     margin: 0px;
     font-family: 'Source Sans 3', sans-serif;
     background-color: black;   /* body 안에 있는 글씨체를 변경 */
-    
+
 }
 
-
-a {
-    text-decoration: none;    /* 텍스트에 있는 밑줄 제거 */
-    color: white;    /* 텍스트 컬러 지정 */
-}
 
 .navbar {
     display: flex;
@@ -27,27 +22,30 @@ a {
     display: flex;
     list-style: none;
     padding-left: 0;
+    color: white;
 }
 
-.navbar_menu li {
+.navbar_menu a {
     padding: 8px 12px;
+    color: white;
+    text-decoration: none;
 }
 
 .navbar_menu li:hover {    /* 마우스 커서를 올렸을 때 */
     background-color: darkorange;    /* 마우스 커서를 올렸을 때 박스의 색깔 */
-    border-radius: 50px;    /* 마우스 커서를 올렸을 때 박스의 둥글기 */
+    border-radius: 25px;    /* 마우스 커서를 올렸을 때 박스의 둥글기 */
 }
 
 .navbar_icons {
     list-style: none;
-    color: white;
     display: flex;
     padding-left: 0px;
 }
 
 .navbar_icons li {
     padding: 8px 12px;
-    
+    color: white;
+    text-decoration: none;
 }
 
 .navbar_tooglebtn {    /*토글 버튼 만들기 */
@@ -55,6 +53,7 @@ a {
     position: absolute;
     right: 32px;
     font-size: 24px ;
+    color: white;
     /* color: orange; */
 }
 
@@ -78,7 +77,8 @@ article {
 
     .navbar_menu li {
         width: 100%;    /* 리스트의 박스 크기를 100%로 지정 */
-        text-align: center; /* 박스 크기를 100%으로 지정했을 때 텍스트가 다시 가운데로 오기 위해 사용 */ 
+        text-align: center; /* 박스 크기를 100%으로 지정했을 때 텍스트가 다시 가운데로 오기 위해 사용 */
+        padding: 8px; 
     }
 
     .navbar_icons {
