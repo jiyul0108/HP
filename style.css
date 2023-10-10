@@ -18,14 +18,9 @@ a {
     padding: 8px 12px;
 }
 
-.navbar_logo {
-    font-size: 24px;
-    color: white;
-    
-}
-
 .navber_logo i {
     color: aqua;
+    
 }
 
 .navbar_menu {
@@ -48,11 +43,13 @@ a {
     color: white;
     display: flex;
     padding-left: 0px;
+    
 
 }
 
 .navbar_icons li {
     padding: 8px 12px;
+    
 }
 
 .navbar_tooglebtn {    /*토글 버튼 만들기 */
@@ -87,6 +84,10 @@ a {
         justify-content: center;
         width: 100%;
         
+    }
+
+    .navbar_icons li {
+        padding: 8px 25px;
     }
 
     .navbar_tooglebtn {    /* 창이 작아졌을때만 토글버튼 생기기 */
