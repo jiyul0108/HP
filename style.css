@@ -1,6 +1,7 @@
 body {
     margin: 0px;
-    font-family: 'Source Sans 3', sans-serif;    /* body 안에 있는 글씨체를 변경 */
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: black;   /* body 안에 있는 글씨체를 변경 */
     
 }
 
@@ -18,9 +19,8 @@ a {
     padding: 8px 12px;
 }
 
-.navber_logo i {
-    color: aqua;
-    
+.navbar_logo i {
+    color: lightskyblue;
 }
 
 .navbar_menu {
@@ -43,8 +43,6 @@ a {
     color: white;
     display: flex;
     padding-left: 0px;
-    
-
 }
 
 .navbar_icons li {
@@ -58,6 +56,10 @@ a {
     right: 32px;
     font-size: 24px ;
     /* color: orange; */
+}
+
+article {
+    color: white;
 }
 
 @media screen and (max-width: 768px) {    /* 창의 너비가 768일 때 */
