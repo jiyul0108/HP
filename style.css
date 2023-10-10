@@ -1,0 +1,100 @@
+body {
+    margin: 0px;
+    font-family: 'Source Sans 3', sans-serif;    /* body 안에 있는 글씨체를 변경 */
+    
+}
+
+
+a {
+    text-decoration: none;    /* 텍스트에 있는 밑줄 제거 */
+    color: white;    /* 텍스트 컬러 지정 */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;    /* justify-content는 가로축 기준으로 좌우에 대한 정렬 */
+    align-items: center;    /* align-items는 세로축 기준으로 정렬 */    
+    background-color: #263343; /* 배경색 설정 */
+    padding: 8px 12px;
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: white;
+    
+}
+
+.navber_logo i {
+    color: aqua;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_menu li:hover {    /* 마우스 커서를 올렸을 때 */
+    background-color: darkorange;    /* 마우스 커서를 올렸을 때 박스의 색깔 */
+    border-radius: 50px;    /* 마우스 커서를 올렸을 때 박스의 둥글기 */
+}
+
+.navbar_icons {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0px;
+
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+}
+
+.navbar_tooglebtn {    /*토글 버튼 만들기 */
+    display: none;    /* 평소에는 보이지 않게 */
+    position: absolute;
+    right: 32px;
+    font-size: 24px ;
+    /* color: orange; */
+}
+
+@media screen and (max-width: 768px) {    /* 창의 너비가 768일 때 */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;    /* 로고를 왼쪽에서 시작 */
+        padding: 8px 12px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;    /* 로고 메뉴를 가운데에 배치 */
+        width: 100%;    /* 위에서 로고 메뉴를 가운데에 배치하였지만 메뉴의 너비가 좁기 때문에 100%를 사용함 */
+    }
+
+    .navbar_menu li {
+        width: 100%;    /* 리스트의 박스 크기를 100%로 지정 */
+        text-align: center; /* 박스 크기를 100%으로 지정했을 때 텍스트가 다시 가운데로 오기 위해 사용 */ 
+    }
+
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .navbar_tooglebtn {    /* 창이 작아졌을때만 토글버튼 생기기 */
+        display: block;   
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+}

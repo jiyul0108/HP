@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200&display=swap" rel="stylesheet">
+    <title>Nav bar</title>
+    <script 
+        src="https://kit.fontawesome.com/6871c5976f.js" 
+        crossorigin="anonymous">
+    </script>
+    <script src="main.js" defer></script>
 </head>
 <body>
-    HI
+    <nav class="navbar">
+        <div class="navber_logo">
+            <i class="fa-solid fa-house"></i>
+            <a href="http://127.0.0.1:3000/index.html#">JIYUL KIM</a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a href="http://127.0.0.1:3000/index1.html">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Weddings</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Bookings</a></li>
+        </ul>
+
+        <ul class="navbar_icons">
+           <a href="https://www.instagram.com/jiyul_0108/?next=%2F"><li><i class="fa-brands fa-instagram"></i></li></a> 
+            <a href="#"><li><i class="fa-brands fa-youtube"></i></li></a>
+        </ul>    
+        <a href="#" class="navbar_tooglebtn">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </a>
+
+    </nav>
+    <article>
+        <h1>하</h1>
+        <input type="button" value="jiyul" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        ">
+        <input type="button" value="kim" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        ">
+    </article>
 </body>
 </html>
